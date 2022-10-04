@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+   <input type="button" id="minus" value="-" onclick="fminus()">
+      <input type="button" id="plus" value="+" onclick="fplus()">
+    <div id="place-1"></div>
+    <div id="block"></div>
+      <script>
+        function fminus(){
+        let m = document.getElementById("minus").value;
+        let min = document.getElementById("place-1").innerHTML--;
+        if(min == 4){
+                document.body.style.backgroundColor = "red"; 
+            }
+            else if(min==3){
+                document.body.style.backgroundColor = "red"; 
+            }
+            else if(min ==2){
+                document.body.style.backgroundColor = "red"; 
+            }
+            else if(min == 7){
+                document.body.style.backgroundColor = "yellow";
+            }
+            else if(min == 6){
+                document.body.style.backgroundColor = "yellow";
+            }
+            else if(min == 5){
+                document.body.style.backgroundColor = "yellow";
+            }
+            else if(min == 10){
+                document.body.style.backgroundColor = "green";
+            }
+            else if(min == 9){
+                document.body.style.backgroundColor = "green";
+            }
+            else if(min == 8){
+                document.body.style.backgroundColor = "green";
+            }
+            else{
+                document.body.style.backgroundColor = "white";
+            }
+
+
+        
+}
+        function fplus(){
+            let pl = document.getElementById("plus").value;
+           let  pls = document.getElementById("place-1").innerHTML++;
+            if(pls == 0){
+                document.body.style.backgroundColor = "red"; 
+            }
+            else if(pls==1){
+                document.body.style.backgroundColor = "red"; 
+            }
+            else if(pls ==2){
+                document.body.style.backgroundColor = "red"; 
+            }
+            else if(pls == 3){
+                document.body.style.backgroundColor = "yellow";
+            }
+            else if(pls == 4){
+                document.body.style.backgroundColor = "yellow";
+            }
+            else if(pls == 5){
+                document.body.style.backgroundColor = "yellow";
+            }
+            else if(pls == 6){
+                document.body.style.backgroundColor = "green";
+            }
+            else if(pls == 7){
+                document.body.style.backgroundColor = "green";
+            }
+            else if(pls == 8){
+                document.body.style.backgroundColor = "green";
+            }
+            else{
+                document.body.style.backgroundColor = "white";
+            }
+
+
+        }
+    
+      </script> 
+</body>
+</html>
